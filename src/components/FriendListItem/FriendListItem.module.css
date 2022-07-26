@@ -1,0 +1,39 @@
+.item {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 12px;
+
+    background-color: #fff;
+
+    border: 1px solid Lavender;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.status {
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+
+
+    background-color:orangered;
+
+
+    border: 1px solid inherit;
+    border-radius: 50%;
+}
+
+.avatar {
+    margin-right: 12px;
+
+    border: 1px solid AliceBlue;
+    border-radius: 10%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.name {
+    font-size: 24px;
+    font-weight: 600;
+}
