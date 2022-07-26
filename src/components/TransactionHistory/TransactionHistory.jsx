@@ -1,14 +1,15 @@
 import PropTypes from 'prop-types';
 import Transaction from '../Transaction/Transaction';
+import s from './TransactionHistory.module.css'
 
 const TransactionHistory = ({ items = [] }) => {
   return (
-    <table className="transaction-history">
-      <thead>
+    <table className={s.history}>
+      <thead className={s.tableHeader}>
         <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
+          <th className={s.cellHeader}>Type</th>
+          <th className={s.cellHeader}>Amount</th>
+          <th className={s.cellHeader}>Currency</th>
         </tr>
       </thead>
       <tbody>
@@ -23,7 +24,7 @@ const TransactionHistory = ({ items = [] }) => {
       </tbody>
     </table>
   );
-};
+}
 
 TransactionHistory.prototype = {
     key: PropTypes.string,
