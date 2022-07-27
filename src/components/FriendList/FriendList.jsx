@@ -18,10 +18,14 @@ const FriendList = ({ friends = [] }) => {
 }
 
 FriendList.propTypes = {
-    avatar: PropTypes.string,
-    name: PropTypes.string,
-    isOnline: PropTypes.bool,
-    key: PropTypes.number,
+    friends: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number,
+            avatar: PropTypes.string,
+            name: PropTypes.string,
+            isOnline: PropTypes.bool,
+        })
+    )
 }
 
 export default FriendList;
